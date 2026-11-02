@@ -1,0 +1,209 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ZUS Coffee新品内容执行与渠道协同｜李世怡｜明源云项目顾问岗</title><meta name="description" content="从新品内容调研到素材准备与渠道排期，协助Instagram发布，并通过周度复盘优化后续执行。"><style>
+    :root { --ink: #202a38; --blue: #1645c3; --pink: #ad3168; --teal: #08786a; --gold: #805e13; --yellow: #ffe083; --line: #d9e0e8; --muted: #596777; --soft: #f4f6f9; }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; scroll-padding-top: 86px; }
+    body { margin: 0; color: var(--ink); background: #fff; font: 16px/1.8 Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif; letter-spacing: 0; }
+    h1, h2, h3, h4, p, figure { margin: 0; }
+    h1, h2, h3, h4 { line-height: 1.4; letter-spacing: 0; text-wrap: balance; }
+    p { overflow-wrap: anywhere; }
+    a { color: inherit; text-underline-offset: 4px; }
+    img { display: block; max-width: 100%; height: auto; }
+    button { font: inherit; cursor: pointer; touch-action: manipulation; }
+    button, a { -webkit-tap-highlight-color: transparent; }
+    [hidden] { display: none !important; }
+    :focus-visible { outline: 3px solid var(--pink); outline-offset: 4px; }
+    .wrap { width: min(1180px, calc(100% - 64px)); margin-inline: auto; }
+    .skip-link { position: fixed; top: 10px; left: 10px; z-index: 100; padding: 8px 12px; background: #fff; transform: translateY(-160%); }
+    .skip-link:focus { transform: none; }
+    .nav { position: sticky; top: 0; z-index: 30; display: flex; align-items: center; justify-content: space-between; gap: 24px; min-height: 64px; padding: 0 max(32px, calc((100% - 1180px) / 2)); background: #fffffffa; border-bottom: 1px solid var(--line); }
+    .brand { display: inline-flex; align-items: center; gap: 10px; color: var(--blue); text-decoration: none; font-size: 13px; font-weight: 750; white-space: nowrap; }
+    .brand-mark { display: grid; place-items: center; width: 28px; height: 28px; border: 1px solid var(--blue); border-radius: 50%; font-size: 11px; }
+    .nav-links { display: flex; gap: 22px; min-width: 0; overflow: auto; scrollbar-width: none; }
+    .nav-links::-webkit-scrollbar { display: none; }
+    .nav-links a { display: inline-flex; flex-shrink: 0; align-items: center; min-height: 44px; border-bottom: 2px solid transparent; color: var(--muted); text-decoration: none; font-size: 12px; }
+    .nav-links a:hover, .nav-links a[aria-current="location"] { color: var(--blue); border-bottom-color: var(--blue); }
+    .hero { position: relative; isolation: isolate; background: #d9e5ed; }
+    .hero::before { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(90deg, #f4f8fcfa 0%, #f4f8fcf5 36%, #f4f8fc75 60%, #f4f8fc00 80%), url("evidence/coffizz-launch.jpg") center 55% / cover no-repeat; }
+    .hero-inner { padding-block: 55px 35px; }
+    .eyebrow { margin-bottom: 20px; color: var(--blue); font-size: 11px; font-weight: 750; }
+    h1 { color: var(--blue); font-size: 64px; line-height: 1.14; font-weight: 850; }
+    h1 span { display: block; margin-top: 16px; color: var(--ink); font-size: 36px; line-height: 1.35; }
+    .hero-copy { max-width: 570px; margin-top: 22px; color: #334558; font-size: 16px; line-height: 1.9; }
+    .hero-meta { display: flex; flex-wrap: wrap; gap: 8px 20px; margin-top: 23px; font-size: 12px; color: #334558; }
+    .hero-meta span { padding-left: 9px; border-left: 2px solid var(--blue); }
+    .hero-source { max-width: 570px; margin-top: 28px; font-size: 10px; color: #3c4e5f; }
+    .hero-source a { display: inline-flex; align-items: center; min-height: 32px; }
+    .disclosure { background: var(--yellow); color: #362807; border-bottom: 1px solid #d9b759; }
+    .disclosure-inner { display: grid; grid-template-columns: 205px 1fr; align-items: center; gap: 40px; padding-block: 21px; }
+    .disclosure h2 { font-size: 18px; }
+    .disclosure strong { font-size: 14px; }
+    .disclosure p { font-size: 12px; margin-top: 5px; }
+    .snapshot { border-bottom: 1px solid var(--line); }
+    .metric-row { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .metric { --accent: var(--blue); display: grid; grid-template-columns: auto 1fr; gap: 22px; align-items: center; padding: 28px; border-right: 1px solid var(--line); }
+    .metric:first-child { padding-left: 0; }
+    .metric:nth-child(2) { --accent: var(--teal); }
+    .metric:last-child { --accent: var(--pink); border-right: 0; }
+    .metric strong { color: var(--accent); font: 46px/1.2 "SFMono-Regular", Consolas, monospace; white-space: nowrap; }
+    .metric b { display: block; font-size: 14px; }
+    .metric small { display: block; font-size: 11px; color: var(--muted); margin-top: 4px; }
+    .band { border-bottom: 1px solid var(--line); }
+    .soft { background: var(--soft); }
+    .section { padding-block: 74px; }
+    .section-head { display: grid; grid-template-columns: .85fr 1.15fr; gap: 70px; margin-bottom: 34px; align-items: start; }
+    .kicker { color: var(--blue); font-size: 11px; font-weight: 750; margin-bottom: 12px; }
+    h2 { font-size: 36px; line-height: 1.35; }
+    h3 { font-size: 22px; } h4 { font-size: 16px; }
+    .lead { font-size: 15px; color: var(--muted); line-height: 1.95; padding-top: 3px; }
+    .lead p + p { margin-top: 12px; }
+    .roles { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 30px; }
+    .role { --accent: var(--blue); display: grid; grid-template-columns: 38px 1fr; gap: 18px; border-top: 3px solid var(--accent); padding-top: 24px; }
+    .role:nth-child(2) { --accent: var(--pink); }
+    .role:nth-child(3) { --accent: var(--teal); }
+    .role > span { font: 28px/1.5 "SFMono-Regular", Consolas, monospace; color: var(--accent); }
+    .role p { font-size: 13px; color: var(--muted); margin-top: 10px; }
+    .research-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 30px; }
+    .research-item { padding-top: 22px; border-top: 1px solid #b3bfcd; }
+    .research-item > span { color: var(--blue); font: 12px/1.5 "SFMono-Regular", Consolas, monospace; }
+    .research-item h3 { margin-top: 12px; }
+    .research-item p { color: var(--muted); font-size: 14px; margin-top: 12px; }
+    .research-item small { display: block; font-size: 11px; color: var(--gold); margin-top: 20px; }
+    .research-note { padding-top: 24px; margin-top: 28px; border-top: 1px solid var(--line); font-size: 13px; color: var(--muted); }
+    .workflow-heading { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; flex-wrap: wrap; margin-bottom: 22px; }
+    .workflow-heading h3 { font-size: 19px; }
+    .example-label { font-size: 11px; color: var(--gold); font-weight: 650; }
+    .workflow { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 22px; list-style: none; margin: 0 0 38px; padding: 0; }
+    .workflow li { --accent: var(--blue); position: relative; border-top: 3px solid var(--accent); padding-top: 20px; }
+    .workflow li:nth-child(2), .workflow li:nth-child(5) { --accent: var(--pink); }
+    .workflow li:nth-child(3), .workflow li:nth-child(6) { --accent: var(--teal); }
+    .workflow li:not(:last-child)::after { content: "→"; position: absolute; right: -22px; top: -21px; color: var(--accent); font-size: 23px; background: #fff; padding-inline: 3px; }
+    .workflow li > span { display: block; color: var(--accent); font: 29px/1.3 "SFMono-Regular", Consolas, monospace; margin-bottom: 12px; }
+    .workflow h4 { font-size: 16px; }
+    .workflow p { font-size: 12px; color: var(--muted); margin-top: 8px; }
+    .tablist { display: flex; width: min(650px, 100%); padding: 4px; border: 1px solid #b7c4d4; background: #fff; border-radius: 6px; margin-bottom: 24px; }
+    .tablist button { flex: 1; min-width: 0; min-height: 46px; padding: 8px 12px; border: 0; border-radius: 3px; color: var(--muted); background: transparent; font-size: 13px; }
+    .tablist button[aria-selected="true"] { background: var(--blue); color: #fff; }
+    .tablist button:hover:not([aria-selected="true"]) { background: var(--soft); color: var(--blue); }
+    .panels { min-width: 0; }
+    .panel { padding: 28px 0; border-block: 1px solid var(--line); min-width: 0; }
+    .panel + .panel { margin-top: 24px; }
+    .enhanced .panels { display: grid; }
+    .enhanced .panel { grid-area: 1 / 1; margin: 0; }
+    .enhanced .panel[aria-hidden="true"] { visibility: hidden; pointer-events: none; }
+    .panel-heading { display: grid; grid-template-columns: 56px 1fr; align-items: center; gap: 20px; margin-bottom: 25px; }
+    .panel-heading > span { color: var(--pink); font: 37px/1.2 "SFMono-Regular", Consolas, monospace; }
+    .panel-heading small { display: block; font-size: 10px; color: var(--muted); margin-bottom: 7px; }
+    .panel-heading h3 { font-size: 24px; }
+    .panel-columns { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 30px; }
+    .panel-column { --accent: var(--blue); border-top: 3px solid var(--accent); padding-top: 17px; }
+    .panel-column:nth-child(2) { --accent: var(--pink); }
+    .panel-column:nth-child(3) { --accent: var(--teal); }
+    .panel-column h4 { color: var(--accent); }
+    .panel-column p { font-size: 14px; color: var(--muted); line-height: 1.9; margin-top: 11px; }
+    .material-note { font-size: 11px; color: var(--muted); margin-top: 17px; }
+    .evidence { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 56px; align-items: start; margin-top: 50px; }
+    .photo-link { display: block; cursor: zoom-in; border: 1px solid var(--line); background: #fff; }
+    .photo-link:hover { outline: 3px solid var(--blue); outline-offset: -3px; }
+    .feed img { width: 100%; aspect-ratio: 1206 / 2622; object-fit: contain; }
+    figcaption { font-size: 11px; color: var(--muted); margin-top: 12px; }
+    .evidence-copy { padding-top: 23px; border-top: 2px solid var(--ink); }
+    .evidence-copy h3 { font-size: 27px; }
+    .evidence-copy > p { margin-top: 16px; font-size: 14px; color: var(--muted); }
+    .evidence-points { margin: 25px 0; }
+    .evidence-points > div { padding-block: 16px; border-top: 1px solid var(--line); }
+    .evidence-points dt { font-size: 14px; font-weight: 700; }
+    .evidence-points dd { margin: 6px 0 0; font-size: 13px; color: var(--muted); }
+    .image-note { padding: 16px 18px; margin-top: 20px; border-left: 3px solid #ae790b; background: var(--yellow); color: #362807; font-size: 12px; }
+    .product-materials { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-top: 28px; }
+    .product-materials img { width: 100%; aspect-ratio: 1; object-fit: contain; }
+    .channel-steps { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 30px; margin-bottom: 40px; }
+    .channel-step { border-top: 3px solid var(--teal); padding-top: 22px; }
+    .channel-step:nth-child(2) { border-color: var(--pink); }
+    .channel-step:nth-child(3) { border-color: var(--blue); }
+    .channel-step h3 { font-size: 21px; }
+    .channel-step p { font-size: 13px; color: var(--muted); margin-top: 11px; }
+    .review-intro { display: flex; justify-content: space-between; align-items: baseline; gap: 20px; flex-wrap: wrap; margin-bottom: 22px; }
+    .review-intro h3 { font-size: 23px; }
+    .review-note { padding: 15px 18px; background: #fff2c8; border-left: 3px solid #c79922; color: #604714; font-size: 12px; margin-bottom: 22px; }
+    .results { background: #f1f7f4; }
+    .result-list { list-style: none; margin: 0; padding: 0; border-top: 1px solid #b9d2c7; }
+    .result-list li { display: grid; grid-template-columns: 55px .8fr 1.2fr; align-items: baseline; gap: 28px; padding-block: 26px; border-bottom: 1px solid #b9d2c7; }
+    .result-list li > span { font: 22px/1.2 "SFMono-Regular", Consolas, monospace; color: var(--teal); }
+    .result-list h3 { font-size: 22px; }
+    .result-list p { font-size: 14px; color: var(--muted); }
+    .scope-note { margin-top: 25px; font-size: 12px; color: #4b6258; }
+    .scope-note strong { margin-right: 10px; color: #25654a; }
+    .footer { padding-block: 22px; font-size: 11px; color: var(--muted); }
+    .footer .wrap { display: flex; justify-content: space-between; gap: 20px; align-items: center; }
+    .footer a { display: inline-flex; align-items: center; min-height: 44px; font-weight: 700; color: var(--blue); }
+    @media (max-width: 1000px) {
+      h1 { font-size: 55px; } h1 span { font-size: 32px; } h2 { font-size: 32px; }
+      .hero-copy { max-width: 480px; }
+      .metric { grid-template-columns: 1fr; gap: 9px; padding-inline: 22px; }
+      .metric strong { font-size: 40px; }
+      .section-head { gap: 36px; }
+      .role { grid-template-columns: 30px 1fr; gap: 12px; } .role h3 { font-size: 20px; }
+      .workflow { gap: 15px; } .workflow li:not(:last-child)::after { right: -19px; font-size: 20px; top: -19px; }
+      .workflow h4 { font-size: 14px; }
+      .evidence { gap: 30px; }
+      .product-materials { gap: 12px; }
+    }
+    @media (max-width: 760px) {
+      html { scroll-padding-top: 102px; }
+      .wrap { width: calc(100% - 36px); }
+      .nav { flex-direction: column; align-items: stretch; padding: 12px 18px 0; gap: 0; }
+      .brand { font-size: 12px; } .brand-mark { width: 24px; height: 24px; }
+      .nav-links { width: 100%; gap: 23px; } .nav-links a { font-size: 11px; }
+      .hero::before { background-image: linear-gradient(90deg, #f4f8fcfa 0%, #f4f8fce8 48%, #f4f8fc85 100%), url("evidence/coffizz-launch.jpg"); background-position: center, 68% center; }
+      .hero-inner { padding-block: 32px 22px; }
+      h1 { font-size: 44px; } h1 span { margin-top: 14px; font-size: 27px; }
+      .eyebrow { font-size: 10px; margin-bottom: 15px; }
+      .hero-copy { font-size: 14px; margin-top: 17px; max-width: 390px; }
+      .hero-meta { font-size: 10px; gap: 7px 14px; margin-top: 18px; }
+      .hero-source { font-size: 10px; margin-top: 16px; }
+      .disclosure-inner { grid-template-columns: 1fr; gap: 8px; padding-block: 18px; }
+      .disclosure h2 { font-size: 18px; } .disclosure strong { font-size: 12px; } .disclosure p { font-size: 11px; }
+      .metric, .metric:first-child { padding: 22px 12px; }
+      .metric:first-child { padding-left: 0; } .metric:last-child { padding-right: 0; }
+      .metric strong { font-size: 30px; } .metric b { font-size: 12px; } .metric small { font-size: 10px; }
+      .section { padding-block: 50px; }
+      .section-head { grid-template-columns: 1fr; gap: 18px; margin-bottom: 28px; }
+      h2 { font-size: 29px; } .kicker { font-size: 10px; margin-bottom: 10px; } .lead { font-size: 14px; }
+      .roles, .research-grid { grid-template-columns: 1fr; gap: 24px; }
+      .role { padding-top: 18px; grid-template-columns: 35px 1fr; gap: 15px; }
+      .role h3 { font-size: 21px; } .role p { margin-top: 7px; }
+      .research-item { padding-top: 18px; } .research-item h3 { font-size: 21px; margin-top: 8px; }
+      .research-item p { margin-top: 8px; font-size: 13px; } .research-item small { margin-top: 12px; }
+      .research-note { font-size: 12px; padding-top: 20px; margin-top: 25px; }
+      .workflow-heading h3 { font-size: 18px; } .example-label { font-size: 10px; }
+      .workflow { grid-template-columns: 1fr; gap: 0; margin-bottom: 28px; }
+      .workflow li { border-top: 0; border-left: 2px solid var(--accent); padding: 0 0 24px 54px; margin-left: 9px; }
+      .workflow li:last-child { padding-bottom: 0; }
+      .workflow li > span { position: absolute; top: 1px; left: 14px; font-size: 21px; }
+      .workflow h4 { font-size: 17px; } .workflow p { margin-top: 6px; }
+      .workflow li:not(:last-child)::after { content: "↓"; top: auto; bottom: 0; left: -10px; right: auto; font-size: 20px; padding: 0; }
+      .tablist { width: 100%; margin-bottom: 20px; } .tablist button { font-size: 12px; padding-inline: 6px; }
+      .panel { padding-block: 22px; }
+      .panel-heading { grid-template-columns: 38px 1fr; gap: 15px; margin-bottom: 20px; }
+      .panel-heading > span { font-size: 29px; } .panel-heading h3 { font-size: 21px; }
+      .panel-columns { grid-template-columns: 1fr; gap: 23px; }
+      .panel-column { padding-top: 15px; } .panel-column p { font-size: 13px; margin-top: 9px; }
+      .material-note { font-size: 10px; }
+      .evidence { grid-template-columns: 1fr; gap: 26px; margin-top: 35px; }
+      .evidence-copy { padding-top: 19px; } .evidence-copy h3 { font-size: 25px; }
+      .evidence-copy > p { font-size: 13px; }
+      .product-materials { gap: 16px; }
+      .channel-steps { grid-template-columns: 1fr; gap: 24px; margin-bottom: 30px; }
+      .channel-step { padding-top: 18px; } .channel-step p { margin-top: 8px; }
+      .review-intro { gap: 8px; } .review-intro h3 { font-size: 21px; }
+      .review-note { font-size: 11px; padding: 14px 16px; }
+      .result-list li { grid-template-columns: 32px 1fr; gap: 10px 16px; padding-block: 23px; }
+      .result-list li > span { font-size: 19px; } .result-list h3 { font-size: 21px; }
+      .result-list p { grid-column: 2; font-size: 13px; }
+      .scope-note { font-size: 11px; } .scope-note strong { display: block; margin-bottom: 6px; }
+      .footer .wrap { flex-direction: column; align-items: flex-start; gap: 6px; }
+    }
+    @media (max-width: 360px) { .metric strong { font-size: 26px; } .nav-links { gap: 17px; } }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  
+body{background:#f5f5f1;color:#20312e;font:16px/1.9 -apple-system,BlinkMacSystemFont,"PingFang SC",sans-serif} .case-wrap{max-width:1060px;margin:auto;padding:0 28px}.case-top{background:#163c32;color:white;padding:20px 28px;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.case-top a{color:inherit}.case-hero{background:#163c32;color:white;padding:68px 0}.case-hero h1{font-size:clamp(30px,5vw,54px);line-height:1.3;max-width:900px}.case-hero p{max-width:700px;margin-top:20px;color:#e0e9e3}.case-section{padding:38px 0;border-bottom:1px solid #d2dcd5}.case-section h2{font-size:27px;margin-bottom:16px}.label{font-size:12px;color:#658277;letter-spacing:.14em}.loop{padding:24px;background:#e7eee8;border-left:3px solid #327861}.evidence-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;margin-top:24px}.evidence-grid img{width:100%;height:340px;object-fit:contain;background:white}.evidence-grid figure{margin:0}.evidence-grid figcaption,.note{font-size:13px;color:#62746c}.project-nav{display:flex;flex-wrap:wrap;gap:20px;padding:35px 0}.cta{display:inline-block;margin:20px 0;background:#163c32;color:white;padding:12px 20px}.proof{padding:24px;border:1px solid #cbd7cf;background:white}@media(max-width:640px){.evidence-grid{grid-template-columns:1fr}.case-hero{padding:40px 0}.case-top{font-size:13px}.evidence-grid img{height:280px}}</style></head><body><header class="case-top"><a href="../../index.html">← 李世怡｜明源云｜项目顾问岗</a><span>PROJECT 03 / 2023.12–2024.06</span></header><main><div class="case-hero"><div class="case-wrap"><p>PROJECT CONSULTANT PORTFOLIO / 03</p><h1>ZUS Coffee新品内容执行与渠道协同</h1><p>从新品内容调研到素材准备与渠道排期，协助Instagram发布，并通过周度复盘优化后续执行。</p><p>新媒体运营实习生（业务调研方向）</p></div></div><div class="case-wrap"><section class="case-section"><h2>工作主线</h2><p class="loop">调研与选题 → 素材准备 → 渠道排期 → 内容发布 → 周度复盘 → 优化下一轮执行</p></section><section id="step-0" class="case-section"><p class="label">01 / PROCESS</p><h2>调研转为内容方向</h2><p>参与新品内容前期调研，结合目标用户偏好、社媒互动反馈和竞品内容表现，提炼新品推广重点，为选题、画面和文案提供参考。</p></section><section id="step-1" class="case-section"><p class="label">02 / PROCESS</p><h2>素材准备与交付</h2><p>协助完成50条Instagram内容发布，参与选题、拍摄、剪辑及英文文案制作，整理hashtag与素材，支持团队完成内容准备和发布。</p></section><section id="step-2" class="case-section"><p class="label">03 / PROCESS</p><h2>渠道与排期配合</h2><p>配合产品线上首发及FamilyMart线下渠道传播，协助整理宣传素材、门店信息和发布排期，让产品信息、渠道说明和发布时间相互衔接。</p></section><section id="step-3" class="case-section"><p class="label">04 / PROCESS</p><h2>每周复盘</h2><p>每周跟踪内容数据，累计输出15+次内容复盘，结合互动反馈调整后续选题和表达，将执行结果带回下一轮内容准备。</p></section><section class="case-section"><h2>结果与复盘</h2><p>协助完成50条Instagram内容发布，累计输出15+次内容复盘，协同带动账号粉丝增长1.1w+。粉丝增长为账号整体结果，不等同于个人独立贡献或销售增长。</p></section><section class="case-section"><h2>相关材料</h2><p class="note">保留参考站已有材料；图片用于展示相应场景，品牌资料不代表全部由本人独立制作。流程表述按本版简历整理，未展示客户内部明细。</p><div class="evidence-grid"><figure><a href="../../works/covers/zus-everywhere.jpg" target="_blank" rel="noopener"><img src="../../works/covers/zus-everywhere.jpg" alt="品牌内容与传播场景" loading="lazy"></a><figcaption>品牌内容与传播场景</figcaption></figure><figure><a href="evidence/coffizz-carton.png" target="_blank" rel="noopener"><img src="evidence/coffizz-carton.png" alt="产品包装资料图" loading="lazy"></a><figcaption>产品包装资料图</figcaption></figure></div></section><section class="case-section"><h2>与项目顾问岗的关联</h2><p>从业务信息中明确任务，配合准备材料与执行，记录反馈并跟进下一步。保留项目原有业务背景，体现可迁移的需求理解、沟通协同与问题跟进能力。</p></section><nav class="project-nav" aria-label="其他项目"><a href="../ai-education-partnership/case_study.html">01 客户需求与试点推进</a><a href="../ai-news-dashboard/case_study.html">02 需求分析与AI复盘</a><a href="../zus-everywhere/case_study.html">03 执行协同与内容复盘</a><a href="../../index.html">返回个人主页</a></nav></div></main></body></html>
