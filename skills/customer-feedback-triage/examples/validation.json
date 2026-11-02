@@ -1,0 +1,11 @@
+{
+  "demo": true,
+  "input_records": 8,
+  "issues": 6,
+  "tasks": 6,
+  "faq_drafts": 2,
+  "coverage": "PASS",
+  "handoffs": "PASS",
+  "references": "PASS",
+  "manual_review": "REQUIRED"
+}

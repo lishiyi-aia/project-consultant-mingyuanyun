@@ -1,0 +1,71 @@
+{
+  "demo": true,
+  "issues": [
+    {
+      "id": "I01",
+      "source_ids": ["R001", "R002", "R008"],
+      "customer": "试点A",
+      "category": "登录使用障碍",
+      "summary": "同一试点的三位老师持续登录验证失败，当前课堂演示被阻断；三条记录为同一问题的后续反馈。",
+      "priority": "P1",
+      "missing_info": ["具体发生时间与复现步骤", "脱敏错误提示或截图", "登录环境与影响范围", "当前处理状态"]
+    },
+    {
+      "id": "I02",
+      "source_ids": ["R003"],
+      "customer": "试点B",
+      "category": "操作指引",
+      "summary": "首次使用者不知道如何创建专题，需要操作说明。",
+      "priority": "P3",
+      "missing_info": ["是否已按操作指南尝试", "实际界面版本是否与演示知识一致"]
+    },
+    {
+      "id": "I03",
+      "source_ids": ["R004"],
+      "customer": "试点B",
+      "category": "功能范围咨询",
+      "summary": "客户询问专题内容能否导出为Excel，现有知识尚未确认支持情况。",
+      "priority": "P2",
+      "missing_info": ["当前版本的Excel导出能力", "所需导出字段及使用场景"]
+    },
+    {
+      "id": "I04",
+      "source_ids": ["R005"],
+      "customer": "试点C",
+      "category": "报价咨询",
+      "summary": "客户计划为20人开通一年，询问价格；现有材料没有已确认报价。",
+      "priority": "P3",
+      "missing_info": ["适用产品或方案", "已批准的定价与服务范围", "报价有效条件"]
+    },
+    {
+      "id": "I05",
+      "source_ids": ["R006"],
+      "customer": "试点C",
+      "category": "性能现象反馈",
+      "summary": "专题偶发打开缓慢，重试后可打开；未记录发生时间，原因尚未查明。",
+      "priority": "P2",
+      "missing_info": ["发生时间与频率", "等待时长及复现步骤", "脱敏环境信息与可供排查的记录"]
+    },
+    {
+      "id": "I06",
+      "source_ids": ["R007"],
+      "customer": "试点D",
+      "category": "培训资料准备",
+      "summary": "客户拟于下周为同事培训，询问可用的现成材料。",
+      "priority": "P3",
+      "missing_info": ["培训对象与重点", "具体培训日期", "资料版本及提供方式"]
+    }
+  ],
+  "tasks": [
+    {"id":"T01","issue_id":"I01","next_action":"优先核实当前阻断情况，收集脱敏错误提示、发生时间与复现步骤，交由技术支持排查；记录后续结果，不预先承诺原因或修复时限。","suggested_role":"客户项目联系人、技术支持","owner":null,"due_date":null,"status":"待人工确认"},
+    {"id":"T02","issue_id":"I02","next_action":"依据K01准备创建专题的操作指引，核对实际界面版本后提供，并跟进用户是否能完成首次创建。","suggested_role":"客户支持或产品运营","owner":null,"due_date":null,"status":"待人工确认"},
+    {"id":"T03","issue_id":"I03","next_action":"确认客户希望导出的字段与使用场景，向产品团队核实当前版本的Excel导出能力，再形成有依据的回复。","suggested_role":"客户项目联系人、产品团队","owner":null,"due_date":null,"status":"待人工确认"},
+    {"id":"T04","issue_id":"I04","next_action":"确认20人一年需求对应的产品方案与服务范围，向商务人员核对已批准定价及报价条件后准备报价材料。","suggested_role":"商务或客户项目联系人","owner":null,"due_date":null,"status":"待人工确认"},
+    {"id":"T05","issue_id":"I05","next_action":"补充专题打开缓慢的发生时间、等待时长、频率及复现步骤，整理脱敏记录供技术团队排查，并跟进下一次是否复现。","suggested_role":"客户支持、技术支持","owner":null,"due_date":null,"status":"待人工确认"},
+    {"id":"T06","issue_id":"I06","next_action":"依据K02整理产品介绍、创建专题操作指南与常见问题清单，向项目联系人确认培训重点、资料版本及提供方式。","suggested_role":"客户项目联系人或培训支持","owner":null,"due_date":null,"status":"待人工确认"}
+  ],
+  "faqs": [
+    {"id":"Q01","source_ids":["R003"],"knowledge_ids":["K01"],"question":"第一次使用时如何创建专题？","answer":"按演示知识：在专题页选择创建专题，输入关注话题并确认；结果生成后可在专题列表查看。实际使用前需核对界面版本。","status":"待审核"},
+    {"id":"Q02","source_ids":["R007"],"knowledge_ids":["K02"],"question":"开展同事培训时可以准备哪些现成材料？","answer":"按演示知识，可准备产品介绍、创建专题操作指南和常见问题清单；资料版本与提供方式需由项目联系人确认。","status":"待审核"}
+  ]
+}

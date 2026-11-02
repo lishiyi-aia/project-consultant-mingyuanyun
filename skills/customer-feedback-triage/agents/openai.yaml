@@ -1,0 +1,4 @@
+interface:
+  display_name: "客户反馈闭环处理"
+  short_description: "将客户反馈整理为可追溯的问题、跟进任务与FAQ草稿，并保留人工确认项"
+  default_prompt: "使用 $customer-feedback-triage 整理这批客户反馈，输出问题清单、跟进任务和FAQ草稿。"
