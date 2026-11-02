@@ -2,11 +2,16 @@
   "repository": "lishiyi-aia/project-consultant-mingyuanyun",
   "original_repository": "lishiyi-aia/market-trainee-finetoday",
   "original_commit_before": "26a6b9702c14d197f5cd6c007a61fb92123bf070",
-  "stage": "created",
+  "stage": "live",
   "provider": "github-pages",
   "repository_url": "https://github.com/lishiyi-aia/project-consultant-mingyuanyun",
   "repository_id": 1442457585,
   "clone_url": "https://github.com/lishiyi-aia/project-consultant-mingyuanyun.git",
   "branch": "main",
-  "source_path": "/docs"
+  "source_path": "/docs",
+  "site_url": "https://lishiyi-aia.github.io/project-consultant-mingyuanyun/",
+  "pages_status": "built",
+  "commit_sha": "481603740cb86c531c1d1fed339be0ff0f1dc4c7",
+  "original_commit_after": "26a6b9702c14d197f5cd6c007a61fb92123bf070",
+  "original_unchanged": true
 }

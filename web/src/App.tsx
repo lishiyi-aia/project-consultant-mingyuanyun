@@ -4,7 +4,6 @@ import { Canvas } from '@react-three/fiber'
 import { motion, useScroll, useTransform, type MotionValue } from 'framer-motion'
 import * as THREE from 'three'
 import Scene from './scene/Scene'
-import NoiseOverlay from './ui/NoiseOverlay'
 import Resume from './ui/Resume'
 import Works from './ui/Works'
 import LoadingScreen from './ui/LoadingScreen'
@@ -48,7 +47,7 @@ function Hero({ lang, cueOpacity }: { lang: Lang; cueOpacity: MotionValue<number
   })
   // 透明度在 about 顶部升到约 30vh 时归 0：起点 60%→进度 p 时顶部在 0.6×(1−p)，
   // 令 =0.3 解得 p=0.5，故 opacity 区间 [0, 0.5]
-  const blur = useTransform(scrollYProgress, [0, 0.5], ['blur(0px)', 'blur(16px)'])
+  const blur = useTransform(scrollYProgress, [0, 0.5], ['blur(0px)', 'blur(0px)'])
   const opacity = useTransform(scrollYProgress, [0, 0.5], [1, 0])
   // 视差：标题上升更快、字距随滚动拉开；正文上升慢一点
   const titleY = useTransform(scrollYProgress, [0, 1], [0, -96])
@@ -133,9 +132,9 @@ export default function App() {
       <div className="scene-bg">
         <Canvas
           shadows={{ type: THREE.PCFShadowMap }}
-          dpr={[1, 1.5]}
+          dpr={[1, 2]}
           camera={{ position: [0, 5, 19], fov: 39, near: 0.1, far: 500 }}
-          gl={{ antialias: false, stencil: false, depth: true, toneMapping: THREE.ACESFilmicToneMapping }}
+          gl={{ antialias: true, stencil: false, depth: true, toneMapping: THREE.ACESFilmicToneMapping }}
         >
           <color attach="background" args={['#0a0e16']} />
           <Suspense fallback={null}>
@@ -185,7 +184,7 @@ export default function App() {
       </motion.div>
 
       {/* 全屏胶片噪点蒙层（multiply 混合） */}
-      <NoiseOverlay />
+      
 
       {/* 可滚动内容 */}
       <main className="content">
